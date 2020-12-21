@@ -59,13 +59,14 @@ public class ListaXOR {
         if(next == 0){
             head = null;
             headSuplementaria = null;
+            return;
         }
         if(tmpNodo.getDato().equals(dato)){
             NodoSuplementario tmpSplm = headSuplementaria;
             NodoXOR newHead = null;
             while(tmpSplm != null){
-
                 newHead = (NodoXOR) tmpSplm.getDato();
+                System.out.println(newHead);
                 if(next == newHead.getInstanceId()) {
                     break;
                 }
